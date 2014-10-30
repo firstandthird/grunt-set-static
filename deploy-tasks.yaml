@@ -1,0 +1,19 @@
+aliases:
+  - 'default'
+  - 'dist'
+  - 'aws_s3'
+aws_s3:
+  options:
+    accessKeyId: '<%= aws.accessKeyID %>'
+    secretAccessKey: '<%= aws.secretAccessKey %>'
+    bucket: '<%= aws.bucket %>'
+    debug: false
+    differential: true
+  files:
+    -
+      expand: true
+      cwd: '<%= dist %>'
+      src:
+        - '**/*'
+      dest: ''
+

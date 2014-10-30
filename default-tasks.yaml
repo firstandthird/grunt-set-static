@@ -1,5 +1,0 @@
-aliases:
-  - 'shell'
-shell:
-  command: 'ls'
-

@@ -1,0 +1,24 @@
+aliases:
+  - 'jshint'
+  - 'concat:scripts'
+jshint:
+  - '<%= dev %>/**/*.js'
+clean:
+  - '<%= dist %>/app.js'
+  - '<%= dist %>/bower.js'
+bower:
+  dest: '<%= dist %>/bower.js'
+concat:
+  src:
+    - '<%= dist %>/bower.js'
+    - '<%= dev %>/scripts/**/*.js'
+    - '<%= dev %>/modules/**/*.js'
+  dest: '<%= dist %>/scripts.js'
+watch:
+  files:
+    - '<%= dev %>/**/*.js'
+  tasks:
+    - 'scripts'
+uglify:
+  files:
+    '<%= dist %>/scripts.js': '<%= dist %>/scripts.js'

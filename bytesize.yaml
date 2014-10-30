@@ -1,0 +1,4 @@
+ui:
+  src:
+    - '<%= dist %>/*.js'
+    - '<%= dist %>/*.css'
