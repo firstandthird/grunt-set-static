@@ -1,11 +1,17 @@
 aliases:
-  - 'copy:view'
+  - 'handlebars-layout'
 watch:
   files:
     - '<%= dev %>/index.html'
   tasks:
     - 'view'
-copy:
-  src: '<%= dev %>/index.html'
-  dest: '<%= dist %>/index.html'
-
+handlebars-layout:
+  options:
+    basePath: '<%= dev %>'
+    partials:
+      - '<%= dev %>/layouts/**/*.html'
+      - '<%= dev %>/modules/**/*.html'
+    data:
+      - '<%= dev %>/data/**/*.yaml'
+  files:
+    '<%= dist %>/' : '<%= dev %>/*.html'
