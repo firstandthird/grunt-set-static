@@ -1,11 +1,11 @@
 aliases:
-  - 'handlebars-layout'
+  - 'handlebars_layout'
 watch:
   files:
     - '<%= dev %>/index.html'
   tasks:
     - 'view'
-handlebars-layout:
+handlebars_layout:
   options:
     basePath: '<%= dev %>'
     partials:
