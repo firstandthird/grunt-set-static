@@ -2,7 +2,7 @@ aliases:
   - 'handlebars_layout'
 watch:
   files:
-    - '<%= dev %>/index.html'
+    - '<%= dev %>/**/*.html'
   tasks:
     - 'view'
 handlebars_layout:
@@ -14,4 +14,8 @@ handlebars_layout:
     data:
       - '<%= dev %>/data/**/*.yaml'
   files:
-    '<%= dist %>/' : '<%= dev %>/*.html'
+    -
+      expand: true
+      cwd: '<%= dev %>'
+      src: '**/*.html'
+      dest: '<%= dist %>'
