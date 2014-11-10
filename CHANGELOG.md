@@ -1,4 +1,10 @@
 
+0.0.5 / 2014-11-10 
+==================
+
+  * copy image assets to dist
+  * better dist command, set up grunt-inline
+
 0.0.4 / 2014-11-10 
 ==================
 
