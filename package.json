@@ -3,13 +3,14 @@
   "description": "grunt-set for a static website",
   "homepage": "https://github.com/firstandthird/grunt-set-static",
   "author": "First+Third",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/firstandthird/grunt-set-static.git"
   },
   "keywords": [
     "gruntcollection",
+    "gruntplugin",
     "grunt-set",
     "static"
   ],
