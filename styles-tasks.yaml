@@ -1,12 +1,29 @@
 aliases:
   - 'less'
+bower:
+  dest: '<%= dist %>/bower.css'
+  type: '.css'
 less:
   files:
     '<%= dist %>/styles.css':
-      - 'bower_components/ionic/release/css/ionic.css'
+      - '<%= dist %>/bower.css'
       - '<%= dev %>/**/*.less'
 watch:
+  options:
+    livereload: false
   files:
     - '<%= dev %>/**/*.less'
   tasks:
     - 'styles'
+watch__css:
+  files:
+    - '<%= dist %>/**/*.css'
+cssmin:
+  files:
+    -
+      expand: true
+      cwd: '<%= dist %>'
+      src: '**/*.css'
+      dest: '<%= dist %>'
+clean:
+  - '<%= dist %>/bower.css'

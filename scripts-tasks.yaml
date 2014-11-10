@@ -3,16 +3,12 @@ aliases:
   - 'concat:scripts'
 jshint:
   - '<%= dev %>/**/*.js'
-clean:
-  - '<%= dist %>/app.js'
-  - '<%= dist %>/bower.js'
 bower:
   dest: '<%= dist %>/bower.js'
 concat:
   src:
     - '<%= dist %>/bower.js'
-    - '<%= dev %>/scripts/**/*.js'
-    - '<%= dev %>/modules/**/*.js'
+    - '<%= dev %>/**/*.js'
   dest: '<%= dist %>/scripts.js'
 watch:
   files:
@@ -22,3 +18,5 @@ watch:
 uglify:
   files:
     '<%= dist %>/scripts.js': '<%= dist %>/scripts.js'
+clean:
+  - '<%= dist %>/bower.js'

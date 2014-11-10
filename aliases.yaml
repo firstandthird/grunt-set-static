@@ -1,10 +1,15 @@
 default:
+  - 'clean'
   - 'bower'
   - 'scripts'
   - 'styles'
   - 'view'
+  - 'assets'
   - 'bytesize'
 dist:
   - 'default'
+  - 'clean'
   - 'uglify:scripts'
-  - 'less:styles_prod'
+  - 'cssmin:styles'
+  - 'inline'
+  - 'bytesize'

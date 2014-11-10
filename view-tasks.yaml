@@ -19,3 +19,10 @@ handlebars_layout:
       cwd: '<%= dev %>'
       src: '**/*.html'
       dest: '<%= dist %>'
+inline:
+  files:
+    -
+      expand: true
+      cwd: '<%= dist %>'
+      src: '**/*.html'
+      dest: '<%= dist %>'
