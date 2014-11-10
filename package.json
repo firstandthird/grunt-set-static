@@ -15,7 +15,7 @@
   ],
   "peerDependencies": {
     "grunt": "^0.4.5",
-    "grunt-set": "0.0.1"
+    "grunt-set": "0.0.2"
   },
   "dependencies": {
     "grunt-aws-s3": "^0.9.4",
