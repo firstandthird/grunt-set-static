@@ -3,6 +3,7 @@ aliases:
 watch:
   files:
     - '<%= dev %>/**/*.html'
+    - '<%= dev %>/data/**/*.yaml'
   tasks:
     - 'view'
 handlebars_layout:
