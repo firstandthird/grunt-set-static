@@ -19,6 +19,7 @@
     "grunt-set": "0.0.2"
   },
   "dependencies": {
+    "grunt-autoprefixer": "^1.0.1",
     "grunt-aws-s3": "^0.9.4",
     "grunt-bytesize": "~0.1.1",
     "grunt-concat-bower": "^0.5.0",
