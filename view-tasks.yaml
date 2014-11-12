@@ -8,7 +8,7 @@ watch:
     - 'view'
 handlebars_layout:
   options:
-    basePath: '<%= dev %>'
+    basePath: '<%= dev %>/'
     partials:
       - '<%= dev %>/layouts/**/*.html'
       - '<%= dev %>/modules/**/*.html'
