@@ -1,4 +1,9 @@
 
+0.0.8 / 2014-11-20 
+==================
+
+  * added bower_components to less paths and option for lessRelativeUrls
+
 0.0.7 / 2014-11-12 
 ==================
 
