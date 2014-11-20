@@ -5,6 +5,10 @@ bower:
   dest: '<%= dist %>/bower.css'
   type: '.css'
 less:
+  options:
+    relativeUrls: <%= lessRelativeUrls %>
+    paths:
+      - 'bower_components'
   files:
     '<%= dist %>/styles.css':
       - '<%= dist %>/bower.css'

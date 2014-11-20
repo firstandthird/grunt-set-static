@@ -10,7 +10,7 @@ grunt:
     - 'default'
 bower:
   files:
-    - 'bower_components/**/*.js'
+    - 'bower.json'
   tasks:
     - 'bower'
     - 'scripts'
