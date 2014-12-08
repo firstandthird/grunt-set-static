@@ -1,4 +1,9 @@
 
+0.0.9 / 2014-12-08 
+==================
+
+  * better clean and on create html file in root folder
+
 0.0.8 / 2014-11-20 
 ==================
 
