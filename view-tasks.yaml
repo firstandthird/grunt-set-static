@@ -18,7 +18,7 @@ handlebars_layout:
     -
       expand: true
       cwd: '<%= dev %>'
-      src: '**/*.html'
+      src: '*.html'
       dest: '<%= dist %>'
 inline:
   files:
@@ -27,3 +27,5 @@ inline:
       cwd: '<%= dist %>'
       src: '**/*.html'
       dest: '<%= dist %>'
+clean:
+  - '<%= dist %>/**/*.html'
