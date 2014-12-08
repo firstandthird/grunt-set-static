@@ -27,5 +27,3 @@ inline:
       cwd: '<%= dist %>'
       src: '**/*.html'
       dest: '<%= dist %>'
-clean:
-  - '<%= dist %>/**/*.html'
