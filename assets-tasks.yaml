@@ -9,5 +9,8 @@ copy__images:
         - '**/*.ico'
         - '**/*.png'
         - '**/*.jpg'
+        - '**/*.ttf'
+        - '**/*.woff'
+        - '**/*.eot'
       cwd: '<%= dev %>/'
       dest: '<%= dist %>/'
